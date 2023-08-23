@@ -1,0 +1,119 @@
+* {
+    font-family: "Tahoma", sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: fit-content;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header" 
+    "aside-one main main main aside-two" 
+    "aside-one main main main aside-two" 
+    "footer footer footer footer footer";
+    max-height: fit-content;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    border-style: ridge;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    border-style: ridge;
+  }
+  
+  .aside-one {
+    grid-area: aside-one;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    border-style: ridge;
+  }
+  
+  .aside-two {
+    grid-area: aside-two;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    border-style: ridge;
+    min-width:fit-content;
+    min-height: fit-content;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    border-style: ridge;
+  }
+  
+  img {
+    float: right;
+    margin-left: 2%;
+    width: 340px;
+    height: 300px;
+    border-radius: 50px;
+  }
+  
+  body {
+    background-image: url("/PersonalWebpage/Media/redandblack2.jpg");
+    background-size: cover;
+  }
+  
+  @keyframes soc {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #social:hover {
+    animation-name: soc;
+    animation-iteration-count: infinite;
+    animation-duration: 400ms;
+    width: 80px;
+    height: 80px;
+  }
