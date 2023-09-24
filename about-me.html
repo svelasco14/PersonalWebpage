@@ -2,19 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" size="16x16" href="Media/favicon-16x16.png">
     <link rel="stylesheet" href="CSS/webpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Me</title>
 </head>
 <body>
-    <div class="nav menu">
-        <a href="index.html">Home</a>
-        <a  active href="about-me.html">About Me</a>
-        <a href="contact-me.html">Contact Me</a>
-    </div>
     <h1>About Me</h1>
-    <img src="Media/img_0434_720.jpg" alt="pictue of everybody">
+    <div class="nav" id="myNav">
+        <a href="index.html">Home</a>
+        <a href="about-me.html" class="active">About Me</a>
+        <a href="contact-me.html">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+
+<div class="grid-container">
+    <main class="main">
+        <p>My name is Sergio Velasco, I was born in South America but
+          moved to
+          Miami, FL and raised there until I went to college in Gainesville, FL. Go Gators! I graduated from college
+          with a
+          Bachelors in Applied Physiology and quickly realized the field was not for me. I bounced around a few jobs
+          gaining
+          experience and also moving from Miami to Tampa, FL. Here is where I started realizing I needed to go back and
+          study
+          something better suited for me and then BOOM!... the pandemic hit. I had to do the best with what was dealt to
+          me
+          and that meant finding a decent job to help assist with income and not be affected by the pandemic so I landed
+          on
+          Amazon! I've been with Amazon ever since and thankfully found the career choice option to help study something
+          I can
+          make a lasting career out of.
+        </p>
+
+        <div class="img-container">
+            <h2>My Treasure Vault</h2>
+
+                <div id="slider">
+                    <img src="Media/img_0267_720.jpg" class="active1" alt="img 1">
+                    <img src="Media/img_0434_720.jpg" alt="img 2">
+                    <img src="Media/IMG_0080.JPG" alt="img 3">
+                    <img src="Media/IMG_0082.jpg" alt="img 4">
+                    <img src="Media/IMG_0110.JPG" alt="img 5">
+                    <img src="Media/IMG_0184.jpeg" alt="img 6">
+                    <img src="Media/IMG_0267.JPG" alt="img 7">
+                    <img src="Media/IMG_0293.JPG" alt="img 8">
+                    <img src="Media/IMG_0311.JPG" alt="img 9">
+                    <img src="Media/IMG_0345.JPG" alt="img 10">
+                    <img src="Media/IMG_0403.jpeg" alt="img 11">
+                    <img src="Media/IMG_0687.jpg" alt="img 12">
+                    <img src="Media/IMG_1680.JPEG" alt="img 13">
+                    <img src="Media/IMG_8356.jpeg" alt="img 14">
+                    <img src="Media/IMG_9105.jpeg" alt="img 15">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
+        </div>
+    </main>
+</div>
+
+    <script> src= "Javascript/webpage.js"</script>
     
 </body>
 </html>

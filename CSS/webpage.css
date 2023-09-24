@@ -4,11 +4,65 @@
   }
   
   h1 {
+    text-align: left;
+    padding: 10px;
+    color: white;
+
+  }
+
+  h2 {
     text-align: center;
   }
+
+  .nav {
+    overflow: hidden;
+  }
+
+  .nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+
+  .nav a:hover {
+    background-color: #a83737;
+    color: white;
+  }
+
+  .nav a.active {
+    background-color: #690000;
+    color: white;
+  }
+
+  .nav .icon {
+    display: none;
+  }
   
-  .wrapper {
-    max-width: fit-content;
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
   
   .grid-container {
@@ -18,27 +72,26 @@
     "aside-one main main main aside-two" 
     "aside-one main main main aside-two" 
     "footer footer footer footer footer";
-    max-height: fit-content;
-    margin-top: 4rem;
-    gap: 1rem;
+    margin-top: 2rem;
+    gap: 8px;
   }
   
   .header {
     grid-area: header;
     background-color: rgb(12, 12, 12);
-    border-radius: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     opacity: 1;
-    margin: auto;
+    border-radius: 10px;
     border-style: ridge;
+    margin: 0.5rem;
   }
   
   .main {
     grid-area: main;
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     opacity: 1;
     margin: auto;
@@ -49,7 +102,7 @@
     grid-area: aside-one;
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     opacity: 1;
     margin: auto;
@@ -60,7 +113,7 @@
     grid-area: aside-two;
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     opacity: 1;
     margin: auto;
@@ -73,26 +126,27 @@
     grid-area: footer;
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     opacity: 1;
     margin: auto;
     border-style: ridge;
+    
   }
   
   img {
-    float: right;
     margin-left: 2%;
-    width: 340px;
-    height: 300px;
-    border-radius: 50px;
+    width: 400px;
+    height: 380px;
+    border-radius: 20px;
   }
   
   body {
     background-image: url("../Media/redandblack2.jpg");
     background-size: cover;
+    margin: 0;
   }
-  
+
   @keyframes soc {
     0% {
       transform: rotate(0deg);
@@ -117,3 +171,115 @@
     width: 80px;
     height: 80px;
   }
+
+  .img-container {
+    display: grid;
+    width: 100%;
+    place-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #slider {
+    position: relative;
+    width: 500px;
+    height: 400px;
+  }
+
+  #slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  #slider img.active1 {
+    opacity: 1;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #717171;
+    color: #f1f1f1;
+    font-size: 32px;
+    font-stretch: condensed;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+
+  button:hover {
+    background-color: #690000;
+  }
+
+  button#prev {
+    left: -40px;
+    padding: 7px 17px 7px 15px;
+  }
+  
+  button#next {
+    right: -40px;
+    padding: 7px 15px 7px 17px;
+  }
+  
+
+  .container {
+    border-radius: 8px;
+    border-style: ridge;
+    padding: 4rem;
+    background-color: rgb(12, 12, 12);
+    margin-top: 2rem;
+    max-width: 70%;
+    box-sizing: border-box;
+  }
+
+  .container a {
+    display: inline-block;
+    margin-top: 3rem;
+  }
+
+  input[type=text], textarea {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+    display: block;
+  }
+
+  input[type=email] {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+    display: block;
+  }
+
+  input[type=submit] {
+    background-color: #690000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #a83737;
+  }
+

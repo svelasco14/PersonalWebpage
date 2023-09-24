@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="all" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,18 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" size="16x16" href="Media/favicon-16x16.png">
   <link rel="stylesheet" href="CSS/webpage.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Project</title>
 </head>
 
 <body>
   <div class="wrapper">
     <h1>Sergio Velasco</h1>
-    <div class="nav menu">
-      <a  active href="index.html">Home</a>
-      <a href="about-me.html">About Me</a>
-      <a href="contact-me.html">Contact Me</a>
-    </div>
+  </div>
+  <div class="nav" id="myNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
     <div class="grid-container">
       <header class="header">
@@ -29,22 +33,6 @@
           Instagram, or LinkedIn.</p>
       </header>
       <main class="main">
-        <h2>About Me</h2>
-        <p><img src="Media/img_0267_720.jpg" alt="picture of me">My name is Sergio Velasco, I was born in South America but
-          moved to
-          Miami, FL and raised there until I went to college in Gainesville, FL. Go Gators! I graduated from college
-          with a
-          Bachelors in Applied Physiology and quickly realized the field was not for me. I bounced around a few jobs
-          gaining
-          experience and also moving from Miami to Tampa, FL. Here is where I started realizing I needed to go back and
-          study
-          something better suited for me and then BOOM!... the pandemic hit. I had to do the best with what was dealt to
-          me
-          and that meant finding a decent job to help assist with income and not be affected by the pandemic so I landed
-          on
-          Amazon! I've been with Amazon ever since and thankfully found the career choice option to help study something
-          I can
-          make a lasting career out of.</p>
         <h2>My Journey</h2>
         <p>My journey began in middle school when I started playing video games on PC's that required more help from
           other
@@ -64,8 +52,7 @@
           try
           practicing everything I've learned.
         </p>
-      </main>
-      <aside class="aside-one">
+
         <h2>Personal Achievements:</h2>
         <ul>
           <li>Although I dont use some of the knowledge I studied in college, it was still a big achievement being a
@@ -80,80 +67,12 @@
             Honestly, one of my
             proudest achievements. </li>
         </ul>
-      </aside>
-      <aside class="aside-two">
-        <div >
-        <table>
-          <tr>
-            <td><a href="https://www.linkedin.com/in/sergio-velasco-a51367113" target="_blank"
-                alt="link to LinkedIn"><img src="Media/linkedin.png" id="social" alt="linkedin icon"
-                  style="width: 50px; height: 50px; background-color: white;"></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="https://twitter.com/sirgeeeoh" target="_blank" alt="link to twitter profile"><img
-                  src="Media/twitter.png" id="social" alt="twitter icon"
-                  style="width: 50px; height: 50px; background-color: white;"></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="https://www.instagram.com/sergpiece/" target="_blank" alt="link to instagram profile"><img
-                  src="Media/instagram.png" id="social" alt="instagram icon"
-                  style="width: 50px; height: 50px; background-color: white;"></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="https://www.twitch.tv/sergpiece" target="_blank" alt="link to twitch profile"><img
-                  src="Media/twitch.png" id="social" alt="twitch icon"
-                  style="width: 50px; height: 50px; background-color: white;"></a>
-            </td>
-          </tr>
-        </table>
-        </div>
-      </aside>
+      </main>
       <footer class="footer">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 style="color:black" class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="form-floating mb-3">
-          <input
-            style="color:black"
-            type="text"
-            class="form-control"
-            id="floatingInput"
-            placeholder="Full name"
-          >
-          <label for="floatingInput">Full name</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input
-            style="color:black"
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          >
-          <label for="floatingInput">Email address</label>
-        </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
       </footer>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script> src="Javascript/webpage.js"</script>
 </body>
 
 </html>
