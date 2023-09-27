@@ -1,6 +1,7 @@
 // responsive hamburger
-addResp.addEventListener("click", () => {
-  let myResp = document.getElementById("myNav");
+let myResp = document.getElementById("myNav");
+
+myResp.addEventListener("click", (e) => {
   
   if (myResp.className === "nav") {
     myResp.className += " responsive";
