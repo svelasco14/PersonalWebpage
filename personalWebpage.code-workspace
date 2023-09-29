@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Projects",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project1",
+		"scm.alwaysShowRepositories": true
+	}
+}
