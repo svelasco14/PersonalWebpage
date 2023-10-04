@@ -8,5 +8,9 @@
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "Project1",
 		"scm.alwaysShowRepositories": true
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
 	}
 }
