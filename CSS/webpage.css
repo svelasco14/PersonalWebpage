@@ -1,6 +1,5 @@
 * {
     font-family: "Tahoma", sans-serif;
-    color: white;
     box-sizing: border-box;
   }
   
@@ -13,6 +12,7 @@
 
   h2 {
     text-align: center;
+    color: white;
   }
 
   .nav {
@@ -88,6 +88,7 @@
     border-radius: 10px;
     border-style: ridge;
     margin: 0.5rem;
+    color: white;
   }
   
   main {
@@ -102,6 +103,7 @@
     padding-bottom: 2.5rem;
     margin: 10rem;
     border-style: ridge;
+    color: white;
   }
 
   .main:not(:first-child) {
@@ -118,6 +120,7 @@
     opacity: 1;
     margin: auto;
     border-style: ridge;
+    color: white;
   }
   
   .aside-two {
@@ -131,17 +134,19 @@
     border-style: ridge;
     min-width:fit-content;
     min-height: fit-content;
+    color: white;
   }
   
   .footer {
     grid-area: footer;
     text-align: center;
     padding: 10px;
-    margin-bottom: -12.25rem;
+    margin-bottom: -10.25rem;
     position: absolute;
     bottom: 0;
     height: 2.5rem;
     width: 100%;
+    color: white;
     
   }
   
@@ -249,13 +254,25 @@
     padding: 4rem;
     background-color: rgb(12, 12, 12);
     margin-top: 2rem;
-    max-width: 70%;
+    max-width: 80%;
     box-sizing: border-box;
+    color: white;
   }
 
   .container a {
     display: inline-block;
     margin-top: 3rem;
+  }
+
+  #form-submitted-msg {
+    margin-bottom: 3rem;
+    border-radius: 3px;
+    background-color: #690000;
+    padding: 0.5rem;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    display: none;
   }
 
   input[type=text], textarea {
@@ -270,7 +287,7 @@
     display: block;
   }
 
-  input[type=email] {
+  input[type=email], select {
     width: 40%;
     padding: 10px;
     border: 2px solid black;
@@ -282,6 +299,20 @@
     display: block;
   }
 
+  /* .error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+  }
+
+  .error.active {
+    padding: 0.15rem;
+  } */
+
   input[type=submit] {
     background-color: #690000;
     color: white;
@@ -291,9 +322,9 @@
     cursor: pointer;
   }
 
-  input[type=submit]:hover {
+  /* input[type=submit]:hover {
     background-color: #a83737;
-  }
+  } */
 
   .left {
     transform-origin: left center;
@@ -333,3 +364,8 @@
     font-size: small;
   }
   
+  #map {
+    display: flexbox;
+    float: right;
+
+  }

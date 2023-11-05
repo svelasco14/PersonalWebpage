@@ -10,6 +10,9 @@
     <title>Contact Me</title>
 </head>
 <body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALyXxMYU5ibWizBuj6P3aIdKd63zqwokg&callback=initMap&v=weekly"
+      defer>
+    </script>
     <h1>Contact Me</h1>
     <div class="nav" id="myNav">
         <a href="index.html">Home</a>
@@ -21,21 +24,40 @@
     </div>
 
     <div class="container">
-        <form>
+
+        <div id="map" style="width: 700px; height: 500px;"></div>
+
+        <div id="form-submitted-msg">Form successfully submitted!</div>
+
+        <form id="form1" action="#" method="POST" autocomplete="on">
       
           <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="firstname" placeholder="First Name">
+          <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+          <br>
       
           <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+          <br>
       
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="pemail">
+          <label for="mail">Email:</label> 
+          <input type="email" id="mail" name="pemail" required>
+          <span class="error" aria-live="polite"></span>
+          <br>
+
+          <label for="subscription">Subscribe?</label>
+          <select name="choice" id="subscription">
+            <option value="Please select an option" selected class="text-muted">Please select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <br>
+          <br>
       
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Your thoughts.." style="height: 200px;"></textarea>
+          <textarea id="subject" name="subject" placeholder="Your thoughts.." style="height: 200px;" required></textarea>
+          <br>
       
-          <input type="submit" value="Submit">
+          <input id="submit1" type="submit" value="Submit" disabled>
       
         </form>
 
